@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.heading {
+	font-size: 45px;
+	font-family: courier;
+}
+h1, h2, section, p {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-family: courier;
+}
+div.box1 {
+	margin-top: 3rem;
+	background: #cfffd3;
+	height: 150px;
+	width: 150px;
+	border: 3px solid black;
+	outline-color: #f5757c;
+	box-sizing: content-box;
+	outline-style: solid;
+	outline-width: 20px;
+	box-shadow: 0 0 0 20px #a8d6e6 inset;
+	padding: 50px;
+	}
+
+.content-container {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+}
+
+div.legend {
+	display: inline-block;
+}
+.legendcircle {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.green {
+	background-color: lightgreen;
+}
+.blue {
+	background-color: navy;
+}
+.black {
+	background-color: black;
+}
+.pink {
+	background-color: pink;
+}
+
+div.ex2border {
+	border: 1px solid #d3d3d3;
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+div.ex2 {
+	height: 100px;
+	width: 180px;
+	background-color: #d3d3d3;
+	display: inline-block;
+} 
+.ex3border {
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	display: inline-block;
+	width: 600px;
+	text-align: left;
+}
+div.ex3 {
+	height: 100px;
+	width: 180px;
+	background-color: #d3d3d3;
+	border: 1px solid black;
+	display: inline-block;
+	}
+.ex3top2 {
+	margin-right: 200px;
+}
+
+.ex4border {
+	border: 1px solid #d3d3d3;
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+div.ex4 {
+	height: 100px;
+	width: 180px;
+	background-color: #d3d3d3;
+	display: inline-block;
+	border: 1px solid black;
+}
+

@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.firstrow {
+	color: white;
+	margin-top: 20px;
+}
+.redbox {
+	height: 250px;
+	width: 500px;
+	background-color: #ff3e42;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 300px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.darkgreenbox {
+	height: 250px;
+	width: 250px;
+	background-color: #008e72;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 80px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.purplebox {
+	height: 250px;
+	width: 250px;
+	background-color: #d100ff;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+.secondrow {
+	color: white;
+	margin-top: 10px;
+}
+.lightbluebox {
+	height: 250px;
+	width: 250px;
+	background-color: #10b5ff;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 100px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.lightgreenbox {
+	height: 250px;
+	width: 500px;
+	background-color: #00d881;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 300px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.limebox {
+	height: 250px;
+	width: 250px;
+	background-color: #00ff63;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+.thirdrow {
+	color: white;
+	margin-top: 10px;
+}
+.yellowbox {
+	height: 250px;
+	width: 250px;
+	background-color: #d3ff12;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 100px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.orangebox {
+	height: 250px;
+	width: 250px;
+	background-color: #ff7100;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 80px;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.darkredbox {
+	height: 250px;
+	width: 500px;
+	background-color: #ef0023;
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 300px;
+	box-sizing: border-box;
+}
