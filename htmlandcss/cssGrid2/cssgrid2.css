@@ -1,0 +1,301 @@
+/* CSS RESET */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing; }
+
+/*img {
+  height: 200px;
+  width: 200px; }*/
+
+/* Styles */
+header {
+  position: fixed;
+  background-color: transparent;
+  padding: 20px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7); }
+  header span {
+    font-weight: 600;
+    font-size: 22px; }
+  header nav {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between; }
+  header ul {
+    display: inline; }
+  header li {
+    display: inline;
+    margin-right: 10px; }
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px; 
+}
+
+main > div {
+  display: grid;
+  padding: 20px;
+  /*margin-bottom: 20px;*/
+}
+
+main > div > * {
+  margin-bottom: 10px;
+}
+
+.home-img {
+  grid-row: 1/span 3;
+  grid-column: 1/span 2;
+  background-image: url(./cssgrid2/home-img.jpg);
+  background-size: cover;
+  background-position: center; 
+}
+
+.welcome {
+  grid-row: span 3;
+  grid-column: span 2;
+  background-color: #f5e3d5;
+  justify-content: center;
+  align-content: center;
+  line-height: 3em;
+}
+
+.welcome h3 {
+  text-transform: uppercase;
+}
+
+.aboutme {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: #fff;
+}
+
+.reading {
+  background-image: url(./cssgrid2/about-img.jpg);
+  background-size: cover;
+  background-position: center; 
+}
+
+.skills, .interfacedesign {
+  background-color: #ebb64a;
+ 
+}
+
+/*Row 2*/
+.row-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  /*grid-gap: */
+  justify-content: center;
+}
+
+
+
+.interfacedesign,
+.mediastrategy,
+.mobileapp,
+.coding {
+  align-content: center;
+   justify-items: center;
+}
+
+
+.mediastrategy {
+  background-color: #ff5f36;
+
+}
+
+.mobileapp {
+  background-color: #1c1c1c;
+}
+
+.coding {
+  background-color: #fff;
+}
+
+.experiences, 
+.education {
+  justify-items: start;
+  align-content: center;  
+}
+
+.experiences {
+  background-color: #ff5f36;
+}
+
+.working {
+  background-color: #ebb64a;
+}
+
+.contact {
+  background-color: #ff5f36;
+  color: white;
+}
+.contact legend {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  display: block;
+  width: 80%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid yellow;
+  background-color: #ff5f36;
+}
+
+.address {
+  background-color: #1c1c1c;
+}
+.common {
+   grid-column: span 2;
+    grid-row: span 2;
+}
+
+.phone {
+    background-size: cover;
+  background-position: center;
+  background-image: url(./cssgrid2/experience-img.jpg); 
+}
+
+.working {
+    background-size: cover;
+  background-position: center;
+   background-image: url(./cssgrid2/education-img.jpg);
+}
+
+.contact {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.laptop {
+  background-size: cover;
+  background-position: center;
+   background-image: url(./cssgrid2/contact-img.jpg); 
+}
+
+.laptop, .address {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.address h2 {
+  color: white;
+}
+.address p {
+  color: yellow;
+}
+address {
+
+}
+
+.map {
+  background-color: #ff5f36;
+}
+
+.footer {
+  background-color: #fff;
+}
+.map, .footer {
+  grid-column: 1 / -1;
+  grid-row: span 2;
+}
+
+select {
+  display: none;
+}
+iframe {
+  height: 100%;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+}
+  
+.allskills span:first-of-type {
+  float: left;
+}
+
+.allskills span:last-of-type {
+  float: right;
+}
+
+.b50, .b70, .b80 {
+  height: 4px;
+  width: 100%;
+
+} 
+
+.b50 {
+  background: linear-gradient(90deg, black 50%, white 50%);
+}
+
+.b70 {
+  background: linear-gradient(90deg, black 70%, white 30%);
+}
+
+.b80 {
+  background: linear-gradient(90deg, black 80%, white 20%);
+}
+.allskills::after, .allskills::before {
+  content: '';
+  display: table;
+}
+
+.allskills::after {
+  clear: both;
+}
+
+.allskills {
+  *zoom: 1;  
+}
+
+button {
+  width: 25%;
+  border-radius: 25px;
+  color: #d3d3d3;
+  background: white;
+  padding: 10px 40px;
+  border: 2px solid black; 
+}
+
+.footer {
+  justify-content: center;
+  align-content: center;
+}
+.footer span {
+  height: 20px;
+  width: 20px;
+  color: black;
+  display: inline-block;
+  background-color: black;
+  border-radius: 50%; 
+  margin-right: 15px;
+}
+@media all and (max-width: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main > * {
+    grid-column: span 2 !important;
+  }
+  header ul {
+    display: none;
+  } 
+  select {
+    display: block;
+    float: left;
+  }
+  nav {
+    background-color: white;
+     }
+
+  header {
+    padding: 0;
+  }
+}
+
+
+/*# sourceMappingURL=cssgrid2.css.map */

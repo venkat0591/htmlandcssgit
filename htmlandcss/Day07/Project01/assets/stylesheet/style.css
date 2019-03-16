@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+body{
+	background: #23593b;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*
+===========================
+Wrapper
+===========================
+*/
+.wrapper {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+/*
+===========================
+Header
+===========================
+*/
+nav {
+	word-spacing: 2em;
+	text-align: center;
+	font-size: 22px;
+}
+li	{
+	display: inline-block;
+}
+.hero {
+	background-image: url(./../media/tents.jpg);
+	height: 500px;
+	position: relative;
+}
+.herotext {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+h2 {
+	font-size: 40px;
+}
+/*
+============
+Divider
+============
+*/
+.divider {
+	height: 10px;
+	background: #b2facf;
+}
+
+/*
+===========================
+Section 2
+===========================
+*/
+.mainvisuals {
+	padding-top: 30px;
+	text-align: center;
+}
+.superman {
+	height: 250px;
+	width: 150px;
+}
+.section2 {
+	background: #d9d9d9;
+	padding-bottom: 20px;
+}
+.col1, .col2, .col3 {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+}
+
+.fl1, .fl2, .fl3 {
+	height: 300px;
+}
+.fl2 {
+	position: relative;
+}
+audio {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 150px;
+}
+
+
+/*
+===========================
+Section 3
+===========================
+*/
+
+.section3 {
+	padding-top: 50px;
+	text-align: center;
+	background: #00d11a;
+	padding-bottom: 50px;
+}
+.Youtube {
+	border: 20px solid white;
+	margin-top: 30px;
+}
+.sec3para {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+}
+
+/*
+====================================
+Section 4
+====================================
+*/
+
+.section4 {
+	background: #a5ffcc;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+form {
+	max-width: 600px;
+	text-align: center;
+	padding: 30px;
+	box-shadow: 0 0 6px 3px green;
+	margin: 0 auto;
+}
+
+/*base*/
+.inline-block {
+	display: inline-block;
+}
+
+
+fieldset {
+	text-align: center;
+	margin-top: 15px;
+}
+.message {
+	height: 100px;
+	width: 100%;
+}
+textarea {
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.name {
+	width: 48%;
+	float: left;
+}
+.e-mail {
+	width: 48%;
+	float: right;
+}
+
+.clear {
+	display: table;
+	clear: both;
+}
+
+.buttonholder {
+	text-align: center;
+}
+.btn {
+	text-transform: uppercase;
+	margin-top: 20px;
+	background-color: #3d6b5a;
+	padding: 10px 20px;
+	color: white;
+}
+
+.formheader {
+	color: white;
+	text-transform: uppercase;
+}
+/*
+====================================
+Section 5
+====================================
+*/
+
+.venue-map {
+	height: 400px;
+	padding-top: 40px;
+}
+.section5 {
+	text-align: center;
+	
+	background-color: black;
+	color: white;
+	background: #303030;
+}
+.footermenu {
+	padding-bottom: 40px;
+}
+
+
+
+
+/*
+=============================
+Clearfix
+=============================
+*/
+.mainvisuals:before,
+.mainvisuals:after {
+  content: "";
+  display: table;
+}
+.mainvisuals:after {
+  clear: both;
+}
+.mainvisuals {
+  clear: both;
+  *zoom: 1;
+}
+
+.mainvisuals2:before,
+.mainvisuals2:after {
+  content: "";
+  display: table;
+}
+.mainvisuals2:after {
+  clear: both;
+}
+.mainvisuals2 {
+  clear: both;
+  *zoom: 1;
+}

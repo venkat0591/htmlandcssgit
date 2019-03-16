@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.container {
+	width: 960px;
+	height: 960px;
+}
+.box50 {
+	width: 49%;
+	display: inline-block;
+	height: 100%;
+}
+.box25 {
+	width: 24%;
+	display: inline-block;
+	height: 100%;
+}
+.firstrow, .secondrow, .thirdrow {
+	height: 33.33%;
+	margin-top: 10px; 
+}
+.redbox {
+	background-color: #ff3e42;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.darkgreenbox {
+	background-color: #008e72;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.purplebox {
+	background-color: #d100ff;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.lightbluebox {
+	background-color: #10b5ff;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.lightgreenbox {
+	background-color: #00d881;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.limebox {
+	background-color: #00ff63;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.yellowbox {
+	background-color: #d3ff12;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.orangebox {
+	background-color: #ff7100;
+	box-sizing: border-box;
+	margin-right: 10px;
+	display: inline-block;
+}
+.darkredbox {
+	background-color: #ef0023;
+	box-sizing: border-box;
+	display: inline-block;
+}
