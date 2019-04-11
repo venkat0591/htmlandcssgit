@@ -135,12 +135,14 @@ select option {
 .dropdownz:hover {
   color: #3fc7a3;
   text-align: center;
+  z-index: 100;
 }
 
 .dropdownz:hover .dropdown-content {
   display: block;
   color: #3fc7a3;
   border-radius: 5px;
+  position: relative;
 }
 /*main sections*/
 

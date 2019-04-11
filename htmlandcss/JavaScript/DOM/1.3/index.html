@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    <script src="./jscode/index.js"></script>
+
+</body> --> 
+
+<!-- ========================
+2
+======================== -->
+
+<!--  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Change Background Color</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+  <!-- </head> -->
+  <!-- <body> -->
+
+ <script>
+   // var colors = ["red", "green", "navy", "red", "yellow"]
+        // function changebg () {
+            // document.body.style.backgroundColor = colors[Math.floor(Math.random() * 4)]
+        // }
+        
+        // document.addEventListener("click", changebg); 
+
+        function changebg () {
+            document.body.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8)
+        }
+        
+        document.addEventListener("click", changebg); 
+
+
+      </script>
+
+
+<!-- //      PRETTY COOL CODE, FIND OUT HOW TO GET THE COLOR DISPLAYED ON THE PAGE 
+
+//         function changebg() {
+//     var x = Math.floor(Math.random() * 256);
+//     var y = Math.floor(Math.random() * 256);
+//     var z = Math.floor(Math.random() * 256);
+//     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+//     console.log(bgColor);
+  
+//     document.body.style.background = bgColor;
+//     }
+
+// document.addEventListener("click", changebg);  -->
+
+
+
+  
+  
+<!-- </body> -->
+<!-- </html> -->
+
+<!-- ========================
+3
+======================== -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Random Quotes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+Quotes will be displayed here 
+    <div class="quote-text"></div>
+    <div class="quote-author"></div>
+    </div>
+    <button>New Quote</button>
+<script src="./jscode/index.js"></script>
+</body>
+</html> -->
+
+<!-- =================================
+4
+================================= -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mouse position</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <style>
+      body {
+        border: 12px solid green;
+        height: 95vh;
+      }
+  </style>
+</head>
+<body>
+    <h1>Move Mouse Cursor</h1>
+  Values will be displaed below
+    <div id="position"></div>
+    
+<script src="./jscode/index.js"></script>
+</body>
+</html> -->
+
+
+======================
+=====================
+=========================
+var ul = document.getElementById('list');
+// var add = document.getElementById('add');
+var remove = document.getElementById('removeAll');
+var text = document.getElementById('text')
+
+function addToDoItem (event) {
+  if (event.keyCode === 13) {
+  var li = document.createElement('li');
+  var checkbox = document.createElement('input');
+  checkbox.type = "checkbox";
+  li.appendChild(checkbox);
+  var inputValue = document.getElementById('text').value;
+  var inputText = document.createTextNode(inputValue);
+  li.appendChild(inputText);
+  var del = document.createElement('span')
+  del.textContent = "X"
+  li.appendChild(del);
+
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    ul.appendChild(li);
+    text.value = "";  
+  }
+}
+}
+
+function reset() {
+  text.value = "";
+}
+
+
+document.addEventListener("keyup", addToDoItem);

@@ -1,0 +1,668 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+========================
+imported fonts
+========================
+*/
+/* 
+=========================
+my reset 
+=========================
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button {
+  border: 0; }
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* 
+=========================
+general css
+=========================
+*/
+/* General CSS */
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.8rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.5; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.wrapper {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto; }
+
+.menuwrapper {
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.center {
+  text-align: center; }
+
+.flexbetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  widows: 100%; }
+
+.divider {
+  height: 3px;
+  background: #d3d3d3;
+  width: 60%;
+  margin-bottom: 2em; }
+
+.verticalspacing {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.responsiveimg {
+  width: 100%;
+  height: auto; }
+
+/* 
+=========================
+anchor 
+=========================
+*/
+a {
+  text-decoration: none; }
+
+:root {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  --primary: #515160;
+  --secondary: #68829e;
+  --tertiary: #aebd38;
+  --quaternary: #598234;
+  --bg: #d3d3d3;
+  --offwhite: #f3f3f3; }
+
+/*
+=========================
+display properties 
+=========================
+*/
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.inline {
+  display: inline; }
+
+/*
+=========================
+grid 
+=========================
+*/
+.gr12 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [12];
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em; }
+
+.gr12 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr12 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+.gr12 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.gr12 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4; }
+
+.gr12 > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5; }
+
+.gr12 > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6; }
+
+.gr12 > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7; }
+
+.gr12 > *:nth-child(8) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8; }
+
+.gr12 > *:nth-child(9) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9; }
+
+.gr12 > *:nth-child(10) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10; }
+
+.gr12 > *:nth-child(11) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11; }
+
+.gr12 > *:nth-child(12) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 12; }
+
+.gr8 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [8];
+  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em; }
+
+.gr8 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr8 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+.gr8 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.gr8 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4; }
+
+.gr8 > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5; }
+
+.gr8 > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6; }
+
+.gr8 > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7; }
+
+.gr8 > *:nth-child(8) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8; }
+
+.gr6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [6];
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em;
+  justify-items: center; }
+
+.gr6 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr6 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+.gr6 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.gr6 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4; }
+
+.gr6 > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5; }
+
+.gr6 > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6; }
+
+.gr4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em; }
+
+.gr4 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr4 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+.gr4 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.gr4 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4; }
+
+.gr3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em;
+  justify-items: center; }
+
+.gr3 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr3 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+.gr3 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3; }
+
+.gr2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 1em; }
+
+.gr2 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1; }
+
+.gr2 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2; }
+
+/*
+=========================
+cards 
+=========================
+*/
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; }
+
+.box1 {
+  background: var(--primary); }
+
+.box2 {
+  background: var(--secondary); }
+
+.box3 {
+  background: var(--tertiary); }
+
+.box4 {
+  background: var(--quaternary); }
+
+.box5 {
+  background: var(--bg); }
+
+.box6 {
+  background: var(--offwhite); }
+
+/*
+=========================
+cards 
+=========================
+*/
+/* Card small */
+.cardsmall {
+  background: #fff;
+  width: 450px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px dotted black;
+  position: relative; }
+  .cardsmall h3 {
+    font-size: 1.4rem; }
+  .cardsmall h4 {
+    font-size: 1.2rem;
+    text-decoration: underline; }
+
+.cardsmallcontents {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%; }
+
+/* Card medium */
+.cardmed {
+  background: var(--tertiary);
+  width: 400px;
+  height: 300px;
+  position: relative;
+  padding: 1em; }
+  .cardmed h3 {
+    font-size: 1.4rem; }
+  .cardmed h4 {
+    font-size: 1.2rem;
+    text-decoration: underline; }
+  .cardmed h5 {
+    font-size: 0.8rem; }
+
+.cardmedcontents {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%; }
+
+/* Card big */
+.cardbig {
+  background: var(--secondary);
+  width: 450px;
+  height: 300px;
+  border: 2px solid #a8d6e6;
+  border-radius: 5px;
+  position: relative;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 2px 4px #d3d3d3 inset;
+  box-shadow: 0 0 2px 4px #d3d3d3 inset; }
+  .cardbig h2, .cardbig h3, .cardbig h4, .cardbig h5 {
+    color: #fff; }
+  .cardbig h3 {
+    font-size: 1.4rem; }
+  .cardbig h4 {
+    font-size: 1rem; }
+  .cardbig h5 {
+    font-size: 0.8rem; }
+
+.cardbigcontents {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%; }
+  .cardbigcontents .cardbigimg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 1em; }
+
+/* 
+==========================
+Buttons
+==========================
+*/
+.btn {
+  padding: 1em;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold; }
+
+.btndanger {
+  background: #ff272d;
+  color: var(--primary); }
+
+.btnsafe {
+  background: var(--tertiary);
+  color: var(--offwhite);
+  padding: 2em;
+  border-radius: 10px;
+  font-style: italic;
+  border-radius: 2px dotted var(secondary); }
+
+.btnround {
+  background: #ff5900;
+  color: var(--primary);
+  padding: 1.5em;
+  border-radius: 60%;
+  font-style: italic;
+  border: 2px dashed var(--secondary); }
+
+/*
+============================
+Form
+============================
+*/
+.contactform {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2em; }
+  .contactform form textarea {
+    display: block;
+    width: 100%; }
+  .contactform form input[type="text"], .contactform form input[type="email"] {
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: red; }
+  .contactform form input[type="text"] {
+    margin-right: 0.5em; }
+
+form > * {
+  margin-bottom: 1em; }
+
+/*
+=================================
+Blockquote
+=================================
+*/
+.bqwrapper {
+  width: 50%; }
+  .bqwrapper blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid var(--secondary);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "“" "”" "‘" "’"; }
+  .bqwrapper blockquote:before {
+    color: #d3d3d3;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    display: block; }
+  .bqwrapper blockquote p {
+    display: inline; }
+
+/*
+===========================
+Clearfix
+===========================
+*/
+.clearfix p {
+  display: inline; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  clear: both;
+  *zoom: 1; }
+
+/*
+===========================
+table
+===========================
+*/
+.tablecontainer {
+  margin: 0 auto; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+th,
+td {
+  padding: 10px 15px; }
+
+thead {
+  background: var(--secondary);
+  color: #fff; }
+
+th {
+  font-weight: bold; }
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2; }
+
+td {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5; }
+
+td:first-child {
+  border-left: 1px solid #cecfd5; }
+
+@media all and (max-width: 768px) {
+  .gr3 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+  .cardsspacing {
+    margin-top: 1em; }
+  .contactform {
+    width: 90%; }
+  .bqwrapper {
+    width: 90%; }
+  .flexresponsive {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+  .btn {
+    margin-top: 0.5em; }
+  .cardbig {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .gr6 {
+    flex-direction: column; } }
+
+
+++++++++++++++++++++++++++
+
+.btncontainer {
+	display: flex;
+	display: space-between;
+}

@@ -75,11 +75,6 @@ img {
 	font-size: 40px;
 }
 
-.mainbox {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 
 label {
 	display: block;
@@ -92,6 +87,14 @@ label {
 .dropdowns {
 	display: inline;
 }
+
+
+.mainbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 
 .item {
 	/*border: 1px solid black;*/
